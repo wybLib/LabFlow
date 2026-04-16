@@ -1,0 +1,394 @@
+[
+  {
+    "user_input": "labflow项目的ai助手部署第一天有什么内容？",
+    "reference": "部署第一天进行了测试，内容是\"测试测试，我的ai助手！\"",
+    "expected_note_id": "123",
+    "expected_title": "⚡ Agent 智能体",
+    "expected_user_id": "5",
+    "source_chunk": "标题：⚡ Agent 智能体摘要：记录labflow项目的ai助手部署第一天正文：测试测试，我的ai助手！"
+  },
+  {
+    "user_input": "2024年有哪些值得关注的AI论文研究方向？",
+    "reference": "2024年值得关注的AI论文研究方向包括大语言模型的新范式和多模态理解的新高度。",
+    "expected_note_id": "1",
+    "expected_title": "✨ 推荐：2024年最值得关注的10篇AI论文",
+    "expected_user_id": "1",
+    "source_chunk": "标题：✨ 推荐：2024年最值得关注的10篇AI论文摘要：盘点年度最具影响力的AI研究成果正文：## 1. 大语言模型的新范式2024年，大语言模型领域迎来了多个突破性进展...## 2. 多模态理解的新高度视觉-语言模型在理解复杂场景方面取得了显著进步..."
+  },
+  {
+    "user_input": "什么是小样本学习？它的核心目标是什么？",
+    "reference": "小样本学习旨在让模型仅通过少量样本就能快速学习新概念。",
+    "expected_note_id": "2",
+    "expected_title": "🔥 Few-Shot Learning：从入门到精通",
+    "expected_user_id": "1",
+    "source_chunk": "标题：🔥 Few-Shot Learning：从入门到精通摘要：小样本学习的核心思想与实践技巧正文：## 什么是小样本学习？小样本学习旨在让模型仅通过少量样本就能快速学习新概念...## 常用方法1. 度量学习2. 元学习3. 数据增强..."
+  },
+  {
+    "user_input": "LangChain实战中提到的智能问答系统需要哪些核心组件？",
+    "reference": "LangChain实战中提到的智能问答系统核心组件包括Document Loaders、Text Splitters、Embeddings和Vector Stores。",
+    "expected_note_id": "3",
+    "expected_title": "💡 LangChain实战：构建智能问答系统",
+    "expected_user_id": "2",
+    "source_chunk": "标题：💡 LangChain实战：构建智能问答系统摘要：手把手教你用LangChain搭建RAG应用正文：## 环境配置首先安装LangChain和相关依赖...## 核心组件- Document Loaders- Text Splitters- Embeddings- Vector Stores..."
+  },
+  {
+    "user_input": "CVPR 2024投稿经验分享中提到了哪些关键阶段？",
+    "reference": "CVPR 2024投稿经验分享中提到了选题阶段和实验设计阶段。",
+    "expected_note_id": "4",
+    "expected_title": "🚩 CVPR 2024投稿经验分享",
+    "expected_user_id": "2",
+    "source_chunk": "标题：🚩 CVPR 2024投稿经验分享摘要：从选题到录用，我的顶会踩坑之路正文：## 选题阶段选择一个有创新点但不至于太冒险的方向...## 实验设计对比实验要充分，消融实验要合理..."
+  },
+  {
+    "user_input": "LoRA是什么？它如何帮助高效微调LLaMA模型？",
+    "reference": "LoRA是一种高效微调大模型的方法，可以用于微调LLaMA模型。",
+    "expected_note_id": "5",
+    "expected_title": "🤖 大模型微调实战：从零开始",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🤖 大模型微调实战：从零开始摘要：使用LoRA高效微调LLaMA模型正文：## 环境准备CUDA、PyTorch、Transformers...## 数据准备构造高质量的微调数据集是关键..."
+  },
+  {
+    "user_input": "RAG技术是什么？它为什么被需要？",
+    "reference": "RAG是检索增强生成技术，因为LLM的知识是静态的，需要外部知识库补充。",
+    "expected_note_id": "6",
+    "expected_title": "📚 RAG检索增强生成技术综述",
+    "expected_user_id": "3",
+    "source_chunk": "标题：📚 RAG检索增强生成技术综述摘要：从理论到实践，全面解析RAG正文：## 为什么需要RAG？LLM的知识是静态的，需要外部知识库补充...## RAG架构Retrieval + Generation双阶段..."
+  },
+  {
+    "user_input": "LoRA微调是什么原理？",
+    "reference": "LoRA是低秩适配器，只训练少量参数。",
+    "expected_note_id": "8",
+    "expected_title": "🎨 LoRA微调技巧大全",
+    "expected_user_id": "4",
+    "source_chunk": "标题：🎨 LoRA微调技巧大全摘要：高效参数微调的最佳实践正文：## LoRA原理低秩适配器，只训练少量参数...## 调参经验rank、alpha、学习率如何选择..."
+  },
+  {
+    "user_input": "Prompt工程中有哪些基础技巧？",
+    "reference": "Prompt工程的基础技巧包括角色扮演、思维链和示例引导。",
+    "expected_note_id": "9",
+    "expected_title": "🔧 Prompt工程从入门到精通",
+    "expected_user_id": "5",
+    "source_chunk": "标题：🔧 Prompt工程从入门到精通摘要：提示词设计的高级技巧正文：## 基础技巧- 角色扮演- 思维链- 示例引导## 高级应用- 自动提示优化- 对抗性提示..."
+  },
+  {
+    "user_input": "MLOps实战中，模型部署与监控部分提到了哪些具体的技术工具？",
+    "reference": "模型服务化使用FastAPI封装模型，监控告警使用Prometheus + Grafana监控指标。",
+    "expected_note_id": "10",
+    "expected_title": "📊 MLOps实战：模型部署与监控",
+    "expected_user_id": "5",
+    "source_chunk": "标题：📊 MLOps实战：模型部署与监控摘要：从训练到生产，全链路指南正文：## 模型服务化使用FastAPI封装模型...## 监控告警Prometheus + Grafana监控指标..."
+  },
+  {
+    "user_input": "多模态学习主要有哪些应用场景？",
+    "reference": "多模态学习的应用场景包括图文检索、视觉问答和视频理解。",
+    "expected_note_id": "11",
+    "expected_title": "🧠 多模态学习前沿综述",
+    "expected_user_id": "1",
+    "source_chunk": "标题：🧠 多模态学习前沿综述摘要：视觉-语言-语音融合技术正文：## 多模态预训练模型CLIP、Flamingo、Fuyu...## 应用场景图文检索、视觉问答、视频理解..."
+  },
+  {
+    "user_input": "学术论文写作一般包含哪些主要结构部分？",
+    "reference": "学术论文的主要结构包括标题、摘要、引言、方法、实验、结论等部分。",
+    "expected_note_id": "12",
+    "expected_title": "📝 学术论文写作指南",
+    "expected_user_id": "2",
+    "source_chunk": "标题：📝 学术论文写作指南摘要：从构思到投稿，完整写作流程正文：## 论文结构标题、摘要、引言、方法、实验、结论...## 写作技巧- 图表制作规范- 引用管理- 语言润色..."
+  },
+  {
+    "user_input": "Kaggle竞赛夺冠经验中提到了哪些特征工程的方法？",
+    "reference": "特征工程包括交叉特征、时序特征和统计特征。",
+    "expected_note_id": "13",
+    "expected_title": "🏆 Kaggle竞赛夺冠经验",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🏆 Kaggle竞赛夺冠经验摘要：从0到1的进阶之路正文：## 赛题分析理解评价指标和数据分布...## 特征工程- 交叉特征- 时序特征- 统计特征..."
+  },
+  {
+    "user_input": "Docker和K8s实战指南主要包含哪些核心内容？",
+    "reference": "该指南主要包含Docker基础（Dockerfile编写、镜像构建、容器管理）和K8s核心概念（Pod、Service、Deployment、Ingress）。",
+    "expected_note_id": "14",
+    "expected_title": "🐳 Docker+K8s实战指南",
+    "expected_user_id": "4",
+    "source_chunk": "标题：🐳 Docker+K8s实战指南摘要：容器化部署全流程正文：## Docker基础Dockerfile编写、镜像构建、容器管理...## K8s核心概念Pod、Service、Deployment、Ingress..."
+  },
+  {
+    "user_input": "时序预测有哪些经典的统计方法？",
+    "reference": "时序预测的经典方法包括ARIMA、Prophet和XGBoost。",
+    "expected_note_id": "15",
+    "expected_title": "📈 时序预测方法综述",
+    "expected_user_id": "5",
+    "source_chunk": "标题：📈 时序预测方法综述摘要：从传统方法到深度学习正文：## 经典方法ARIMA、Prophet、XGBoost...## 深度学习LSTM、Transformer、Informer..."
+  },
+  {
+    "user_input": "AI安全面临哪些主要风险？",
+    "reference": "AI安全面临的主要风险包括越狱攻击、隐私泄露和偏见问题。",
+    "expected_note_id": "16",
+    "expected_title": "🔐 AI安全与对齐",
+    "expected_user_id": "1",
+    "source_chunk": "标题：🔐 AI安全与对齐摘要：大模型的安全挑战正文：## 安全风险- 越狱攻击- 隐私泄露- 偏见问题## 对齐技术RLHF、Constitutional AI..."
+  },
+  {
+    "user_input": "推荐系统有哪些主要的传统算法和深度学习算法？",
+    "reference": "推荐系统的传统算法包括UserCF、ItemCF、MF等，深度学习算法包括DIN、DIEN、MMoE等。",
+    "expected_note_id": "17",
+    "expected_title": "🎯 推荐系统算法大全",
+    "expected_user_id": "2",
+    "source_chunk": "标题：🎯 推荐系统算法大全摘要：从协同过滤到深度学习正文：## 传统算法UserCF、ItemCF、MF...## 深度学习DIN、DIEN、MMoE..."
+  },
+  {
+    "user_input": "语音识别技术有哪些主要的传统方法和深度学习方法？",
+    "reference": "传统方法包括HMM-GMM和WFST，深度学习方法包括RNN-T、Conformer和Whisper。",
+    "expected_note_id": "18",
+    "expected_title": "🗣️ 语音识别技术入门",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🗣️ 语音识别技术入门摘要：从声学模型到端到端正文：## 传统方法HMM-GMM、WFST...## 深度学习RNN-T、Conformer、Whisper..."
+  },
+  {
+    "user_input": "模型推理优化有哪些常用的技术和方法？",
+    "reference": "模型推理优化常用的技术包括量化技术（如INT8、FP16量化）和推理引擎（如TensorRT、ONNX Runtime、vLLM）。",
+    "expected_note_id": "20",
+    "expected_title": "🚀 模型推理优化技巧",
+    "expected_user_id": "5",
+    "source_chunk": "标题：🚀 模型推理优化技巧摘要：加速模型部署的实战经验正文：## 量化技术INT8、FP16量化...## 推理引擎TensorRT、ONNX Runtime、vLLM..."
+  },
+  {
+    "user_input": "小样本学习在2024年有哪些最新的研究方向？",
+    "reference": "2024年小样本学习的最新研究方向包括大模型时代的FSL和跨领域小样本学习。",
+    "expected_note_id": "21",
+    "expected_title": "🔥 小样本学习新进展",
+    "expected_user_id": "1",
+    "source_chunk": "标题：🔥 小样本学习新进展摘要：2024年FSL顶会论文解读正文：## 最新研究方向- 大模型时代的FSL- 跨领域小样本学习..."
+  },
+  {
+    "user_input": "LangChain和LlamaIndex这两个RAG框架应该怎么选择？",
+    "reference": "两者各有优劣，需要根据场景选择。",
+    "expected_note_id": "22",
+    "expected_title": "💡 LangChain与LlamaIndex对比",
+    "expected_user_id": "2",
+    "source_chunk": "标题：💡 LangChain与LlamaIndex对比摘要：选择哪个RAG框架？正文：## 功能对比两者各有优劣，需要根据场景选择..."
+  },
+  {
+    "user_input": "NeurIPS投稿被拒的主要原因有哪些？",
+    "reference": "NeurIPS投稿被拒的主要原因包括创新性不足、实验不够充分和写作问题。",
+    "expected_note_id": "23",
+    "expected_title": "🚩 NeurIPS投稿心得",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🚩 NeurIPS投稿心得摘要：从被拒到录用的心路历程正文：## 审稿意见分析- 创新性不足- 实验不够充分- 写作问题..."
+  },
+  {
+    "user_input": "这个开源大模型对比摘要主要评测了哪些维度？",
+    "reference": "主要评测了推理能力、编程能力和中文理解三个维度。",
+    "expected_note_id": "24",
+    "expected_title": "🤖 开源大模型对比",
+    "expected_user_id": "4",
+    "source_chunk": "标题：🤖 开源大模型对比摘要：Llama3、Qwen、DeepSeek实测正文：## 评测维度- 推理能力- 编程能力- 中文理解..."
+  },
+  {
+    "user_input": "向量数据库选型指南中提到了哪些数据库的对比？",
+    "reference": "向量数据库选型指南中对比了Milvus、Pinecone和Qdrant。",
+    "expected_note_id": "25",
+    "expected_title": "📚 向量数据库选型指南",
+    "expected_user_id": "5",
+    "source_chunk": "标题：📚 向量数据库选型指南摘要：Milvus、Pinecone、Qdrant对比正文：## 性能对比- 索引速度- 查询延迟- 扩展性..."
+  },
+  {
+    "user_input": "什么是ReAct模式？它的核心思想是什么？",
+    "reference": "ReAct模式是思维链+工具调用的新范式，其核心思想是交替进行推理和行动。",
+    "expected_note_id": "26",
+    "expected_title": "⚡ ReAct模式解析",
+    "expected_user_id": "1",
+    "source_chunk": "标题：⚡ ReAct模式解析摘要：思维链+工具调用的新范式正文：## 核心思想交替进行推理和行动..."
+  },
+  {
+    "user_input": "QLoRA技术是什么？它有哪些主要的技术特点？",
+    "reference": "QLoRA是一种更高效的微调方法，主要技术特点包括4-bit量化、双重量化和分页优化。",
+    "expected_note_id": "27",
+    "expected_title": "🎨 QLoRA技术详解",
+    "expected_user_id": "2",
+    "source_chunk": "标题：🎨 QLoRA技术详解摘要：更高效的微调方法正文：## 技术原理- 4-bit量化- 双重量化- 分页优化..."
+  },
+  {
+    "user_input": "什么是结构化提示词设计？它如何提高LLM的输出质量？",
+    "reference": "结构化提示词设计是通过模板设计来提高LLM输出质量的方法，包括明确角色、步骤分解和输出格式约束。",
+    "expected_note_id": "28",
+    "expected_title": "🔧 结构化提示词设计",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🔧 结构化提示词设计摘要：提高LLM输出质量的方法正文：## 模板设计- 明确角色- 步骤分解- 输出格式约束..."
+  },
+  {
+    "user_input": "DVC和MLflow在模型版本管理方面主要有哪些实践内容？",
+    "reference": "DVC+MLflow实践主要包括数据版本控制、数据集管理、模型版本追踪和实验记录。",
+    "expected_note_id": "29",
+    "expected_title": "📊 模型版本管理实战",
+    "expected_user_id": "4",
+    "source_chunk": "标题：📊 模型版本管理实战摘要：DVC+MLflow实践正文：## 数据版本控制- 数据集管理- 模型版本追踪- 实验记录..."
+  },
+  {
+    "user_input": "CLIP模型有哪些主要的改进方向和研究变体？",
+    "reference": "CLIP的改进方向包括细粒度对齐、区域级理解和3D多模态。",
+    "expected_note_id": "30",
+    "expected_title": "🧠 视觉-语言模型新进展",
+    "expected_user_id": "5",
+    "source_chunk": "标题：🧠 视觉-语言模型新进展摘要：CLIP的改进与变体正文：## 研究方向- 细粒度对齐- 区域级理解- 3D多模态..."
+  },
+  {
+    "user_input": "LaTeX写作中有哪些常用的论文排版模板技巧？",
+    "reference": "LaTeX论文排版的高级技巧包括图表跨页、公式编号和参考文献管理。",
+    "expected_note_id": "31",
+    "expected_title": "📝 LaTeX写作技巧",
+    "expected_user_id": "1",
+    "source_chunk": "标题：📝 LaTeX写作技巧摘要：论文排版的高级技巧正文：## 常用模板- 图表跨页- 公式编号- 参考文献管理..."
+  },
+  {
+    "user_input": "数据竞赛中，特征工程有哪些主要的方法可以提升模型分数？",
+    "reference": "数据竞赛中提升模型分数的关键特征工程方法包括特征构造，具体有时间特征、交叉特征和统计特征。",
+    "expected_note_id": "32",
+    "expected_title": "🏆 数据竞赛特征工程",
+    "expected_user_id": "2",
+    "source_chunk": "标题：🏆 数据竞赛特征工程摘要：提升模型分数的关键正文：## 特征构造- 时间特征- 交叉特征- 统计特征..."
+  },
+  {
+    "user_input": "Helm Charts在K8s应用中主要用来做什么？",
+    "reference": "Helm Charts用于K8s应用的打包部署。",
+    "expected_note_id": "33",
+    "expected_title": "🐳 Helm Charts实战",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🐳 Helm Charts实战摘要：K8s应用打包部署正文：## 模板编写- values配置- 依赖管理- 升级回滚..."
+  },
+  {
+    "user_input": "在时间序列预测竞赛中，有哪些常用的特征工程方法？",
+    "reference": "常用的特征工程方法包括滞后特征、滚动统计和日历特征。",
+    "expected_note_id": "34",
+    "expected_title": "📈 时间序列预测竞赛技巧",
+    "expected_user_id": "4",
+    "source_chunk": "标题：📈 时间序列预测竞赛技巧摘要：Kaggle时序比赛经验正文：## 特征工程- 滞后特征- 滚动统计- 日历特征..."
+  },
+  {
+    "user_input": "对抗性攻击有哪些常见的方法？",
+    "reference": "对抗性攻击的常见方法包括FGSM、PGD和对抗训练。",
+    "expected_note_id": "35",
+    "expected_title": "🔐 对抗性攻击与防御",
+    "expected_user_id": "5",
+    "source_chunk": "标题：🔐 对抗性攻击与防御摘要：提高模型鲁棒性的方法正文：## 攻击方法- FGSM- PGD- 对抗训练..."
+  },
+  {
+    "user_input": "序列推荐算法中有哪些经典的模型？",
+    "reference": "序列推荐算法的经典模型包括GRU4Rec、SASRec和BERT4Rec。",
+    "expected_note_id": "36",
+    "expected_title": "🎯 序列推荐算法",
+    "expected_user_id": "1",
+    "source_chunk": "标题：🎯 序列推荐算法摘要：用户行为序列建模正文：## 经典模型- GRU4Rec- SASRec- BERT4Rec..."
+  },
+  {
+    "user_input": "语音合成技术有哪些主流方法？",
+    "reference": "语音合成的主流方法包括Tacotron、FastSpeech和VITS。",
+    "expected_note_id": "37",
+    "expected_title": "🗣️ 语音合成技术",
+    "expected_user_id": "2",
+    "source_chunk": "标题：🗣️ 语音合成技术摘要：从TTS到语音克隆正文：## 主流方法- Tacotron- FastSpeech- VITS..."
+  },
+  {
+    "user_input": "视频理解技术主要包含哪些任务类型？",
+    "reference": "视频理解技术主要包括动作识别、视频描述和视频生成等任务类型。",
+    "expected_note_id": "38",
+    "expected_title": "🎬 视频理解技术综述",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🎬 视频理解技术综述摘要：动作识别与视频生成正文：## 任务类型- 动作识别- 视频描述- 视频生成..."
+  },
+  {
+    "user_input": "vLLM部署指南中提到了哪些核心特性？",
+    "reference": "vLLM部署指南中提到的核心特性包括PagedAttention、连续批处理和高效内存管理。",
+    "expected_note_id": "39",
+    "expected_title": "🚀 vLLM部署指南",
+    "expected_user_id": "4",
+    "source_chunk": "标题：🚀 vLLM部署指南摘要：高吞吐量LLM推理引擎正文：## 核心特性- PagedAttention- 连续批处理- 高效内存管理..."
+  },
+  {
+    "user_input": "AI领域有哪些必读的经典论文？",
+    "reference": "AI领域的经典论文包括Attention Is All You Need、BERT和GPT系列。",
+    "expected_note_id": "40",
+    "expected_title": "✨ AI领域必读论文",
+    "expected_user_id": "5",
+    "source_chunk": "标题：✨ AI领域必读论文摘要：初学者进阶指南正文：## 经典论文- Attention Is All You Need- BERT- GPT系列..."
+  },
+  {
+    "user_input": "元学习在FSL中主要有哪些应用算法？",
+    "reference": "元学习在FSL中的应用算法包括MAML、Reptile和Prototypical Networks。",
+    "expected_note_id": "41",
+    "expected_title": "🔥 元学习在FSL中的应用",
+    "expected_user_id": "1",
+    "source_chunk": "标题：🔥 元学习在FSL中的应用摘要：学习如何学习正文：## 元学习算法- MAML- Reptile- Prototypical Networks..."
+  },
+  {
+    "user_input": "LangChain内置工具有哪些？",
+    "reference": "LangChain内置工具包括搜索引擎、计算器和代码执行。",
+    "expected_note_id": "42",
+    "expected_title": "💡 LangChain工具使用详解",
+    "expected_user_id": "2",
+    "source_chunk": "标题：💡 LangChain工具使用详解摘要：Agent工具链实战正文：## 内置工具- 搜索引擎- 计算器- 代码执行..."
+  },
+  {
+    "user_input": "论文rebuttal时应该遵循哪些基本原则？",
+    "reference": "论文rebuttal时应遵循态度诚恳、逐条回应、补充实验等基本原则。",
+    "expected_note_id": "43",
+    "expected_title": "🚩 论文 rebuttal 技巧",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🚩 论文 rebuttal 技巧摘要：如何有效回应审稿人正文：## 回应原则- 态度诚恳- 逐条回应- 补充实验..."
+  },
+  {
+    "user_input": "LLM推理优化有哪些具体的工程技巧可以降低延迟？",
+    "reference": "LLM推理优化的工程技巧包括KV缓存、投机解码和批处理优化。",
+    "expected_note_id": "44",
+    "expected_title": "🤖 LLM推理优化实战",
+    "expected_user_id": "4",
+    "source_chunk": "标题：🤖 LLM推理优化实战摘要：降低延迟的工程技巧正文：## 优化方法- KV缓存- 投机解码- 批处理优化..."
+  },
+  {
+    "user_input": "这个知识图谱增强RAG系统的技术架构包含哪些主要组件？",
+    "reference": "该系统的技术架构主要包括实体链接、关系抽取和知识融合三个主要组件。",
+    "expected_note_id": "45",
+    "expected_title": "📚 知识图谱增强RAG",
+    "expected_user_id": "5",
+    "source_chunk": "标题：📚 知识图谱增强RAG摘要：结合结构化知识正文：## 技术架构- 实体链接- 关系抽取- 知识融合..."
+  },
+  {
+    "user_input": "多智能体协作系统中的通信机制有哪些类型？",
+    "reference": "多智能体协作系统的通信机制包括消息传递、共享记忆和协作规划。",
+    "expected_note_id": "46",
+    "expected_title": "⚡ 多智能体协作",
+    "expected_user_id": "1",
+    "source_chunk": "标题：⚡ 多智能体协作摘要：Multi-Agent系统设计正文：## 通信机制- 消息传递- 共享记忆- 协作规划..."
+  },
+  {
+    "user_input": "PEFT技术有哪些主流方法？",
+    "reference": "PEFT的主流方法包括Prefix Tuning、Adapter、LoRA及其变体。",
+    "expected_note_id": "47",
+    "expected_title": "🎨 PEFT技术全览",
+    "expected_user_id": "2",
+    "source_chunk": "标题：🎨 PEFT技术全览摘要：参数高效微调方法正文：## 主流方法- Prefix Tuning- Adapter- LoRA及其变体..."
+  },
+  {
+    "user_input": "什么是零样本提示中的高级技巧？",
+    "reference": "零样本提示中的高级技巧包括思维链、自洽性和思维树。",
+    "expected_note_id": "48",
+    "expected_title": "🔧 零样本提示技巧",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🔧 零样本提示技巧摘要：让模型学会推理正文：## 高级技巧- 思维链- 自洽性- 思维树..."
+  },
+  {
+    "user_input": "MLflow实验管理主要包含哪些功能模块？",
+    "reference": "MLflow实验管理主要包含Tracking、Models和Registry三个功能模块。",
+    "expected_note_id": "49",
+    "expected_title": "📊 MLflow实验管理",
+    "expected_user_id": "4",
+    "source_chunk": "标题：📊 MLflow实验管理摘要：追踪、记录、对比实验正文：## 功能模块- Tracking- Models- Registry..."
+  },
+  {
+    "user_input": "跨模态检索技术采用了什么样的模型架构？",
+    "reference": "跨模态检索技术采用了双塔结构、共享空间和对比学习的模型架构。",
+    "expected_note_id": "50",
+    "expected_title": "🧠 跨模态检索技术",
+    "expected_user_id": "5",
+    "source_chunk": "标题：🧠 跨模态检索技术摘要：文本-图像-视频统一检索正文：## 模型架构- 双塔结构- 共享空间- 对比学习..."
+  }
+]

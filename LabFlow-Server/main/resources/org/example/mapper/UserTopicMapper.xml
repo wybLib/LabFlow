@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--xml中 > <需要使用转义字符-->
+<mapper namespace="org.example.mapper.UserTopicMapper">
+    <insert id="insertData">
+        insert into user_topic(user_id, topic_id, create_time) values
+        <foreach collection="topicsId" item="topicId" separator=",">
+            (#{id},#{topicId},now())
+        </foreach>
+    </insert>
+</mapper>

@@ -1,0 +1,66 @@
+server:
+  tomcat:
+    threads:
+      max: 500       # [新增] 调大 Tomcat 最大工作线程数，应对高并发请求
+      min-spare: 50  # [新增] 调大核心线程数，减少线程频繁创建的开销
+
+spring:
+  application:
+    name: labFlow
+  datasource:
+    url: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 
+    hikari:          # [新增] HikariCP 数据库连接池压测配置
+      maximum-pool-size: 200  # 最大连接数，防止请求拿不到数据库连接而排队
+      minimum-idle: 20        # 最小空闲连接
+  servlet:
+    multipart:
+      max-file-size: 10MB  #最大单个文件
+      max-request-size: 100MB #最大请求大小 包含文件和表单数据
+  data:
+    redis:
+      port: 6379
+      host: 
+      database: 0
+      password: 
+      lettuce:       # [新增] Redis 连接池压测配置
+        pool:
+          max-active: 200    # 最大连接数
+          max-idle: 50       # 最大空闲连接
+          min-idle: 10       # 最小空闲连接
+          max-wait: 2000ms   # 连接池最大阻塞等待时间
+  rabbitmq:
+    host: 
+    port: 5672
+    virtual-host: 
+    username: 
+    password: 
+    #这里由于本项目中只有部分需要走批量入库  所以不能设置全局批量消费 否则那些不需要批量消费的mq会报错
+#    listener:
+#      simple:
+#        consumer-batch-enabled: true # 开启批量消费
+#        batch-size: 100              # 攒够 100 条消息再处理
+#        #在 Spring AMQP 的底层设计中，只要你开启了 consumer-batch-enabled: true 和 batch-size: 100，框架默认就会自带一个超时时间
+##        receive-timeout: 2000        # 超时时间：2 秒内没攒够 100 条也立即处理
+
+mybatis:
+  configuration:
+    # [修改] 压测时极其重要！关闭向控制台狂刷 SQL，否则 CPU 全耗在 I/O 上！
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    map-underscore-to-camel-case: true   #开启驼峰命名
+
+# [修改] 全局日志管控，压测期间让控制台彻底安静
+logging:
+  level:
+    root: info # 全局日志设为 error，屏蔽无用的 info 信息
+    org.springframework.jdbc.support.JdbcTransactionManager: info  #压测设置为error级别
+    # org.example: error # 如果你的包名是 org.example，把这行注释打开，屏蔽你代码里的 log.info
+
+aliyun:
+  oss:
+    endpoint: 
+    bucketName: 
+    accessKeyId: 
+    accessKeySecret: 

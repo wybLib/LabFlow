@@ -1,0 +1,242 @@
+[
+  {
+    "question": "labflow项目的AI助手部署第一天情况怎么样？",
+    "user_id": "5",
+    "relevant_note_ids": [
+      "123"
+    ],
+    "ground_truth": "测试测试，我的ai助手！..."
+  },
+  {
+    "question": "后端更新后，对Redis缓存应该怎么处理？",
+    "user_id": "4",
+    "relevant_note_ids": [
+      "121"
+    ],
+    "ground_truth": "后端更新后需要删除redis缓存，cache旁路缓存"
+  },
+  {
+    "question": "2024年最值得关注的AI论文话题里，提到了哪些具体的研究方向？",
+    "user_id": "1",
+    "relevant_note_ids": [
+      "1"
+    ],
+    "ground_truth": "## 1. 大语言模型的新范式\n## 2. 多模态理解的新高度"
+  },
+  {
+    "question": "小样本学习有哪些常用方法？",
+    "user_id": "1",
+    "relevant_note_ids": [
+      "2"
+    ],
+    "ground_truth": "1. 度量学习\n2. 元学习\n3. 数据增强"
+  },
+  {
+    "question": "用LangChain搭建RAG应用需要哪些核心组件？",
+    "user_id": "2",
+    "relevant_note_ids": [
+      "3"
+    ],
+    "ground_truth": "核心组件包括Document Loaders、Text Splitters、Embeddings和Vector Stores。"
+  },
+  {
+    "question": "在CVPR这种顶会投稿，选题和实验设计阶段有什么需要注意的坑吗？",
+    "user_id": "2",
+    "relevant_note_ids": [
+      "4"
+    ],
+    "ground_truth": "选题阶段选择一个有创新点但不至于太冒险的方向。实验设计对比实验要充分，消融实验要合理。"
+  },
+  {
+    "question": "我想用LoRA微调LLaMA模型，第一步该做什么？",
+    "user_id": "3",
+    "relevant_note_ids": [
+      "5"
+    ],
+    "ground_truth": "环境准备CUDA、PyTorch、Transformers..."
+  },
+  {
+    "question": "RAG技术为什么被提出来？",
+    "user_id": "3",
+    "relevant_note_ids": [
+      "6"
+    ],
+    "ground_truth": "LLM的知识是静态的，需要外部知识库补充"
+  },
+  {
+    "question": "LoRA微调时，有哪些关键的参数需要调整？",
+    "user_id": "4",
+    "relevant_note_ids": [
+      "8"
+    ],
+    "ground_truth": "rank、alpha、学习率如何选择......"
+  },
+  {
+    "question": "提示词设计有哪些高级技巧和应用？",
+    "user_id": "5",
+    "relevant_note_ids": [
+      "9"
+    ],
+    "ground_truth": "基础技巧包括角色扮演、思维链和示例引导。高级应用包括自动提示优化和对抗性提示。"
+  },
+  {
+    "question": "MLOps实战中，模型部署和监控具体是怎么做的？",
+    "user_id": "5",
+    "relevant_note_ids": [
+      "10"
+    ],
+    "ground_truth": "模型服务化使用FastAPI封装模型。监控告警使用Prometheus + Grafana监控指标。"
+  },
+  {
+    "question": "多模态学习里有哪些预训练模型和应用场景啊？",
+    "user_id": "1",
+    "relevant_note_ids": [
+      "11"
+    ],
+    "ground_truth": "多模态预训练模型有CLIP、Flamingo、Fuyu...。应用场景包括图文检索、视觉问答、视频理解......"
+  },
+  {
+    "question": "学术论文一般包括哪些主要部分？",
+    "user_id": "2",
+    "relevant_note_ids": [
+      "12"
+    ],
+    "ground_truth": "论文结构包括标题、摘要、引言、方法、实验、结论..."
+  },
+  {
+    "question": "Kaggle竞赛夺冠经验里，特征工程部分都提到了哪些具体方法？",
+    "user_id": "3",
+    "relevant_note_ids": [
+      "13"
+    ],
+    "ground_truth": "特征工程包括交叉特征、时序特征和统计特征。"
+  },
+  {
+    "question": "Docker和K8s实战主要包含哪些核心内容？",
+    "user_id": "4",
+    "relevant_note_ids": [
+      "14"
+    ],
+    "ground_truth": "Docker基础包括Dockerfile编写、镜像构建、容器管理。K8s核心概念包括Pod、Service、Deployment、Ingress。"
+  },
+  {
+    "question": "时序预测有哪些经典方法和深度学习方法？",
+    "user_id": "5",
+    "relevant_note_ids": [
+      "15"
+    ],
+    "ground_truth": "经典方法有ARIMA、Prophet、XGBoost...。深度学习方法有LSTM、Transformer、Informer......"
+  },
+  {
+    "question": "大模型主要面临哪些安全挑战？",
+    "user_id": "1",
+    "relevant_note_ids": [
+      "16"
+    ],
+    "ground_truth": "安全风险包括越狱攻击、隐私泄露和偏见问题。对齐技术有RLHF和Constitutional AI。"
+  },
+  {
+    "question": "推荐系统有哪些主要的算法类型？",
+    "user_id": "2",
+    "relevant_note_ids": [
+      "17"
+    ],
+    "ground_truth": "传统算法包括UserCF、ItemCF、MF等。深度学习算法包括DIN、DIEN、MMoE等。"
+  },
+  {
+    "question": "语音识别技术从传统到深度学习，主要经历了哪些方法或模型？",
+    "user_id": "3",
+    "relevant_note_ids": [
+      "18"
+    ],
+    "ground_truth": "传统方法包括HMM-GMM、WFST...。深度学习方法包括RNN-T、Conformer、Whisper......"
+  },
+  {
+    "question": "有哪些常见的模型推理优化技巧？",
+    "user_id": "5",
+    "relevant_note_ids": [
+      "20"
+    ],
+    "ground_truth": "量化技术（如INT8、FP16量化）和推理引擎（如TensorRT、ONNX Runtime、vLLM）。"
+  },
+  {
+    "question": "最近小样本学习有哪些新的研究方向啊？",
+    "user_id": "1",
+    "relevant_note_ids": [
+      "21"
+    ],
+    "ground_truth": "最新研究方向包括：大模型时代的FSL、跨领域小样本学习。"
+  },
+  {
+    "question": "LangChain和LlamaIndex这两个RAG框架，我该选哪个？",
+    "user_id": "2",
+    "relevant_note_ids": [
+      "22"
+    ],
+    "ground_truth": "两者各有优劣，需要根据场景选择......"
+  },
+  {
+    "question": "NeurIPS投稿被拒通常有哪些常见原因？",
+    "user_id": "3",
+    "relevant_note_ids": [
+      "23"
+    ],
+    "ground_truth": "审稿意见分析包括：创新性不足、实验不够充分、写作问题。"
+  },
+  {
+    "question": "你们实测了哪些开源大模型，主要从哪些方面评测的？",
+    "user_id": "4",
+    "relevant_note_ids": [
+      "24"
+    ],
+    "ground_truth": "实测了Llama3、Qwen、DeepSeek。评测维度包括推理能力、编程能力、中文理解。"
+  },
+  {
+    "question": "向量数据库选型时，性能方面主要看哪些指标？",
+    "user_id": "5",
+    "relevant_note_ids": [
+      "25"
+    ],
+    "ground_truth": "索引速度、查询延迟、扩展性"
+  },
+  {
+    "question": "ReAct模式的核心思想是什么？",
+    "user_id": "1",
+    "relevant_note_ids": [
+      "26"
+    ],
+    "ground_truth": "交替进行推理和行动"
+  },
+  {
+    "question": "QLoRA技术具体是怎么实现高效微调的？",
+    "user_id": "2",
+    "relevant_note_ids": [
+      "27"
+    ],
+    "ground_truth": "QLoRA通过4-bit量化、双重量化和分页优化来实现高效微调。"
+  },
+  {
+    "question": "怎么设计提示词模板才能让大语言模型输出质量更高？",
+    "user_id": "3",
+    "relevant_note_ids": [
+      "28"
+    ],
+    "ground_truth": "明确角色、步骤分解、输出格式约束。"
+  },
+  {
+    "question": "MLOps实战中，DVC和MLflow主要能帮我们做什么？",
+    "user_id": "4",
+    "relevant_note_ids": [
+      "29"
+    ],
+    "ground_truth": "数据版本控制、数据集管理、模型版本追踪、实验记录。"
+  },
+  {
+    "question": "最近视觉-语言模型有哪些主要的研究方向？",
+    "user_id": "5",
+    "relevant_note_ids": [
+      "30"
+    ],
+    "ground_truth": "研究方向包括细粒度对齐、区域级理解和3D多模态。"
+  }
+]

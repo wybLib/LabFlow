@@ -1,0 +1,494 @@
+{
+  "prompt_a": {
+    "prompt_name": "Prompt A",
+    "metrics": {
+      "工具调用准确率（总体）": "78%",
+      "工具调用准确率（normal）": "83%",
+      "工具调用准确率（ambiguous）": "100%",
+      "工具调用准确率（forbidden）": "0%",
+      "澄清触发率（模糊场景）": "100%",
+      "错误工具误触率": "0%",
+      "平均工具调用次数": "0.8"
+    },
+    "details": [
+      {
+        "id": "routing_identity",
+        "category": "normal",
+        "input": "我是谁？我叫什么名字？",
+        "expected_tools": [
+          "get_current_user_info"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_current_user_info"
+        ],
+        "all_runs": [
+          [
+            "get_current_user_info"
+          ],
+          [
+            "get_current_user_info"
+          ],
+          [
+            "get_current_user_info"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查询您的个人信息。"
+      },
+      {
+        "id": "routing_topic_hot",
+        "category": "normal",
+        "input": "现在社区里哪个话题最火？",
+        "expected_tools": [
+          "get_topic_stats"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_topic_stats"
+        ],
+        "all_runs": [
+          [
+            "get_topic_stats"
+          ],
+          [
+            "get_topic_stats"
+          ],
+          [
+            "get_topic_stats"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮你查看一下当前社区里最火的话题。让我获取各话题的宏观统计排行。"
+      },
+      {
+        "id": "routing_comments",
+        "category": "normal",
+        "input": "大家在评论区都在聊些什么？帮我看看",
+        "expected_tools": [
+          "get_comments_analysis"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_comments_analysis"
+        ],
+        "all_runs": [
+          [
+            "get_comments_analysis"
+          ],
+          [
+            "get_comments_analysis"
+          ],
+          [
+            "get_comments_analysis"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮你查看一下评论区大家都在聊些什么。让我获取最新的评论分析。"
+      },
+      {
+        "id": "routing_top_likes",
+        "category": "normal",
+        "input": "全站目前点赞最多的一篇笔记是哪个？",
+        "expected_tools": [
+          "get_all_titles"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_all_titles"
+        ],
+        "all_runs": [
+          [
+            "get_all_titles"
+          ],
+          [
+            "get_all_titles"
+          ],
+          [
+            "get_all_titles"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮你查找全站目前点赞最多的一篇笔记。"
+      },
+      {
+        "id": "routing_personal_search",
+        "category": "normal",
+        "input": "找找我写过的关于 Redis 的笔记",
+        "expected_tools": [
+          "search_notes"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_current_user_info"
+        ],
+        "all_runs": [
+          [
+            "search_notes"
+          ],
+          [
+            "get_current_user_info"
+          ],
+          [
+            "get_current_user_info"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": false,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查找您写过的关于 Redis 的笔记。首先让我获取您的个人信息，然后搜索相关的笔记。"
+      },
+      {
+        "id": "routing_platform_stats",
+        "category": "normal",
+        "input": "我们平台现在总共有多少篇笔记了？",
+        "expected_tools": [
+          "get_note_stats"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_note_stats"
+        ],
+        "all_runs": [
+          [
+            "get_note_stats"
+          ],
+          [
+            "get_note_stats"
+          ],
+          [
+            "get_note_stats"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查询一下平台的总笔记数量。"
+      },
+      {
+        "id": "ambiguous_check",
+        "category": "ambiguous",
+        "input": "检查一下笔记有没有错",
+        "expected_tools": [],
+        "expected_behavior": "clarify",
+        "actual_tools": [],
+        "all_runs": [
+          [],
+          [],
+          []
+        ],
+        "is_clarify": true,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 0,
+        "response_preview": "我可以帮您检查笔记内容，不过我需要知道您具体想检查哪篇笔记呢？您可以通过以下几种方式让我帮您检查：\n\n1. 告诉我笔记的ID或标题\n2. 描述一下笔记的大致内容或主题\n3. 如果您想检查自己的笔记，我可以先获取您的个人信息，然后搜索您的笔记"
+      },
+      {
+        "id": "ambiguous_review",
+        "category": "ambiguous",
+        "input": "帮我审阅一下",
+        "expected_tools": [],
+        "expected_behavior": "clarify",
+        "actual_tools": [],
+        "all_runs": [
+          [],
+          [],
+          []
+        ],
+        "is_clarify": true,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 0,
+        "response_preview": "我注意到您想要审阅一些内容，但是您没有具体说明要审阅什么。为了帮您进行审阅，我需要知道：\n\n1. 您想要审阅什么类型的内容？（比如：笔记、评论、话题等）\n2. 有没有特定的主题或关键词？\n3. 您希望从什么角度进行审阅？（比如：内容质量、技"
+      },
+      {
+        "id": "forbidden_stats_in_summary",
+        "category": "forbidden",
+        "input": "总结一下我的所有笔记",
+        "expected_tools": [
+          "search_notes"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_current_user_info"
+        ],
+        "all_runs": [
+          [
+            "get_current_user_info"
+          ],
+          [
+            "get_current_user_info"
+          ],
+          [
+            "get_current_user_info"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": false,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您总结您的所有笔记。首先让我获取您的个人信息，然后搜索您的笔记。"
+      }
+    ]
+  },
+  "prompt_b": {
+    "prompt_name": "Prompt B",
+    "metrics": {
+      "工具调用准确率（总体）": "100%",
+      "工具调用准确率（normal）": "100%",
+      "工具调用准确率（ambiguous）": "100%",
+      "工具调用准确率（forbidden）": "100%",
+      "澄清触发率（模糊场景）": "100%",
+      "错误工具误触率": "0%",
+      "平均工具调用次数": "0.8"
+    },
+    "details": [
+      {
+        "id": "routing_identity",
+        "category": "normal",
+        "input": "我是谁？我叫什么名字？",
+        "expected_tools": [
+          "get_current_user_info"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_current_user_info"
+        ],
+        "all_runs": [
+          [
+            "get_current_user_info"
+          ],
+          [
+            "get_current_user_info"
+          ],
+          [
+            "get_current_user_info"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查看您的个人信息。"
+      },
+      {
+        "id": "routing_topic_hot",
+        "category": "normal",
+        "input": "现在社区里哪个话题最火？",
+        "expected_tools": [
+          "get_topic_stats"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_topic_stats"
+        ],
+        "all_runs": [
+          [
+            "get_topic_stats"
+          ],
+          [
+            "get_topic_stats"
+          ],
+          [
+            "get_topic_stats"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查看一下当前社区里最热门的话题。"
+      },
+      {
+        "id": "routing_comments",
+        "category": "normal",
+        "input": "大家在评论区都在聊些什么？帮我看看",
+        "expected_tools": [
+          "get_comments_analysis"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_comments_analysis"
+        ],
+        "all_runs": [
+          [
+            "get_comments_analysis"
+          ],
+          [
+            "get_comments_analysis"
+          ],
+          [
+            "get_comments_analysis"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查看一下LabFlow平台上的评论情况，看看大家都在聊些什么。"
+      },
+      {
+        "id": "routing_top_likes",
+        "category": "normal",
+        "input": "全站目前点赞最多的一篇笔记是哪个？",
+        "expected_tools": [
+          "get_all_titles"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_all_titles"
+        ],
+        "all_runs": [
+          [
+            "get_all_titles"
+          ],
+          [
+            "get_all_titles"
+          ],
+          [
+            "get_all_titles"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查询全站点赞最多的笔记。"
+      },
+      {
+        "id": "routing_personal_search",
+        "category": "normal",
+        "input": "找找我写过的关于 Redis 的笔记",
+        "expected_tools": [
+          "search_notes"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "search_notes"
+        ],
+        "all_runs": [
+          [
+            "search_notes"
+          ],
+          [
+            "search_notes"
+          ],
+          [
+            "search_notes"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查找您写过的关于 Redis 的笔记。"
+      },
+      {
+        "id": "routing_platform_stats",
+        "category": "normal",
+        "input": "我们平台现在总共有多少篇笔记了？",
+        "expected_tools": [
+          "get_note_stats"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "get_note_stats"
+        ],
+        "all_runs": [
+          [
+            "get_note_stats"
+          ],
+          [
+            "get_note_stats"
+          ],
+          [
+            "get_note_stats"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您查看一下平台的大盘数据，看看总共有多少篇笔记。"
+      },
+      {
+        "id": "ambiguous_check",
+        "category": "ambiguous",
+        "input": "检查一下笔记有没有错",
+        "expected_tools": [],
+        "expected_behavior": "clarify",
+        "actual_tools": [],
+        "all_runs": [
+          [],
+          [],
+          []
+        ],
+        "is_clarify": true,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 0,
+        "response_preview": "您想让我检查哪篇笔记呢？请告诉我具体的笔记标题、内容关键词，或者您想检查哪个话题的笔记，这样我就能帮您仔细审阅了。\n\n比如您可以告诉我：\n- \"帮我检查一下关于Python编程的笔记\"\n- \"看看我最近写的机器学习笔记有没有错误\"\n- \"审"
+      },
+      {
+        "id": "ambiguous_review",
+        "category": "ambiguous",
+        "input": "帮我审阅一下",
+        "expected_tools": [],
+        "expected_behavior": "clarify",
+        "actual_tools": [],
+        "all_runs": [
+          [],
+          [],
+          []
+        ],
+        "is_clarify": true,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 0,
+        "response_preview": "我注意到您的请求比较模糊，没有明确指出要审阅哪篇笔记。\n\n为了帮您审阅笔记，我需要知道具体是哪一篇。您可以告诉我：\n1. 笔记的标题或关键词\n2. 笔记的大致内容\n3. 笔记的ID（如果您知道的话）\n\n或者，如果您想让我帮您查找您自己的笔记"
+      },
+      {
+        "id": "forbidden_stats_in_summary",
+        "category": "forbidden",
+        "input": "总结一下我的所有笔记",
+        "expected_tools": [
+          "search_notes"
+        ],
+        "expected_behavior": null,
+        "actual_tools": [
+          "search_notes"
+        ],
+        "all_runs": [
+          [
+            "search_notes"
+          ],
+          [
+            "search_notes"
+          ],
+          [
+            "search_notes"
+          ]
+        ],
+        "is_clarify": false,
+        "tool_match": true,
+        "forbidden_triggered": false,
+        "tool_count": 1,
+        "response_preview": "我来帮您总结一下您的所有笔记。让我先搜索一下您个人空间中的笔记内容。"
+      }
+    ]
+  }
+}

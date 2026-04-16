@@ -1,0 +1,82 @@
+[
+  {
+    "user_input": "labflow项目的ai助手部署第一天有什么内容？",
+    "reference": "labflow项目的ai助手部署第一天只有测试内容，具体是\"测试测试，我的ai助手！\"",
+    "expected_note_id": "123",
+    "expected_title": "⚡ Agent 智能体",
+    "expected_user_id": "5",
+    "source_chunk": "标题：⚡ Agent 智能体话题：⚡ Agent 智能体摘要：记录labflow项目的ai助手部署第一天正文：测试测试，我的ai助手！"
+  },
+  {
+    "user_input": "后端更新后需要做什么缓存操作？",
+    "reference": "后端更新后需要删除redis缓存，cache旁路缓存。",
+    "expected_note_id": "121",
+    "expected_title": "测试完毕",
+    "expected_user_id": "4",
+    "source_chunk": "标题：测试完毕话题：🚀 性能优化摘要：后端更新后需要删除redis缓存，cache旁路缓存正文：测试"
+  },
+  {
+    "user_input": "2024年AI领域有哪些值得关注的研究方向？",
+    "reference": "2024年AI领域值得关注的研究方向包括大语言模型的新范式和多模态理解的新高度。",
+    "expected_note_id": "1",
+    "expected_title": "✨ 推荐：2024年最值得关注的10篇AI论文",
+    "expected_user_id": "1",
+    "source_chunk": "标题：✨ 推荐：2024年最值得关注的10篇AI论文话题：未分类摘要：盘点年度最具影响力的AI研究成果正文：## 1. 大语言模型的新范式2024年，大语言模型领域迎来了多个突破性进展...## 2. 多模态理解的新高度视觉-语言模型在理解复杂场景方面取得了显著进步..."
+  },
+  {
+    "user_input": "什么是小样本学习？它的核心目标是什么？",
+    "reference": "小样本学习旨在让模型仅通过少量样本就能快速学习新概念。",
+    "expected_note_id": "2",
+    "expected_title": "🔥 Few-Shot Learning：从入门到精通",
+    "expected_user_id": "1",
+    "source_chunk": "标题：🔥 Few-Shot Learning：从入门到精通话题：🔥 Few-Shot Learning摘要：小样本学习的核心思想与实践技巧正文：## 什么是小样本学习？小样本学习旨在让模型仅通过少量样本就能快速学习新概念...## 常用方法1. 度量学习2. 元学习3. 数据增强..."
+  },
+  {
+    "user_input": "LangChain实战中提到了哪些核心组件？",
+    "reference": "LangChain实战中提到的核心组件包括Document Loaders、Text Splitters、Embeddings和Vector Stores。",
+    "expected_note_id": "3",
+    "expected_title": "💡 LangChain实战：构建智能问答系统",
+    "expected_user_id": "2",
+    "source_chunk": "标题：💡 LangChain实战：构建智能问答系统话题：💡 LangChain 探索摘要：手把手教你用LangChain搭建RAG应用正文：## 环境配置首先安装LangChain和相关依赖...## 核心组件- Document Loaders- Text Splitters- Embeddings- Vector Stores..."
+  },
+  {
+    "user_input": "CVPR 2024投稿经验分享中提到了哪些关键阶段？",
+    "reference": "CVPR 2024投稿经验分享中提到了选题阶段和实验设计阶段。",
+    "expected_note_id": "4",
+    "expected_title": "🚩 CVPR 2024投稿经验分享",
+    "expected_user_id": "2",
+    "source_chunk": "标题：🚩 CVPR 2024投稿经验分享话题：🚩 顶会踩坑摘要：从选题到录用，我的顶会踩坑之路正文：## 选题阶段选择一个有创新点但不至于太冒险的方向...## 实验设计对比实验要充分，消融实验要合理..."
+  },
+  {
+    "user_input": "如何高效微调LLaMA模型？",
+    "reference": "可以使用LoRA方法高效微调LLaMA模型。",
+    "expected_note_id": "5",
+    "expected_title": "🤖 大模型微调实战：从零开始",
+    "expected_user_id": "3",
+    "source_chunk": "标题：🤖 大模型微调实战：从零开始话题：🤖 大模型实战摘要：使用LoRA高效微调LLaMA模型正文：## 环境准备CUDA、PyTorch、Transformers...## 数据准备构造高质量的微调数据集是关键..."
+  },
+  {
+    "user_input": "RAG技术是什么？它为什么被需要？",
+    "reference": "RAG是检索增强生成技术，它被需要是因为LLM的知识是静态的，需要外部知识库补充。",
+    "expected_note_id": "6",
+    "expected_title": "📚 RAG检索增强生成技术综述",
+    "expected_user_id": "3",
+    "source_chunk": "标题：📚 RAG检索增强生成技术综述话题：📚 RAG 检索增强摘要：从理论到实践，全面解析RAG正文：## 为什么需要RAG？LLM的知识是静态的，需要外部知识库补充...## RAG架构Retrieval + Generation双阶段..."
+  },
+  {
+    "user_input": "LoRA微调是什么原理？",
+    "reference": "LoRA原理是低秩适配器，只训练少量参数。",
+    "expected_note_id": "8",
+    "expected_title": "🎨 LoRA微调技巧大全",
+    "expected_user_id": "4",
+    "source_chunk": "标题：🎨 LoRA微调技巧大全话题：🎨 LoRA 微调摘要：高效参数微调的最佳实践正文：## LoRA原理低秩适配器，只训练少量参数...## 调参经验rank、alpha、学习率如何选择..."
+  },
+  {
+    "user_input": "Prompt工程中有哪些基础技巧和高级应用？",
+    "reference": "Prompt工程的基础技巧包括角色扮演、思维链和示例引导；高级应用包括自动提示优化和对抗性提示。",
+    "expected_note_id": "9",
+    "expected_title": "🔧 Prompt工程从入门到精通",
+    "expected_user_id": "5",
+    "source_chunk": "标题：🔧 Prompt工程从入门到精通话题：🔧 Prompt 工程摘要：提示词设计的高级技巧正文：## 基础技巧- 角色扮演- 思维链- 示例引导## 高级应用- 自动提示优化- 对抗性提示..."
+  }
+]
