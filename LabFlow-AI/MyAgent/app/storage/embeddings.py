@@ -41,10 +41,6 @@ def _get_model():
     return _model
 
 # ==================== 对外使用的 LangChain 接口类 ====================
-"""
-为什么 Embedding 类要单独封装成 LangChain 接口？
-答：为了解耦。如果未来要从 bge-m3 换成 OpenAI 的 text-embedding-3-small，只需要更换这一个类，而不需要修改业务逻辑中的任何一行。
-"""
 # 作用：让你的本地模型能伪装成官方接口，直接塞进 Chroma 数据库里用。
 class BGEEmbeddings(Embeddings):  # 继承 LangChain 官方接口，确保能被 Chroma 无缝使用
     # 函数作用：把成千上万条“笔记块”批量转成向量
