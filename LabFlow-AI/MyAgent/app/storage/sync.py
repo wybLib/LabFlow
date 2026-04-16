@@ -1,13 +1,4 @@
-"""
-增量同步与数据一致性
-新笔记发布/编辑/删除时，同步更新 ChromaDB。
-（已全面对齐 Labflow 数据库全量字段）
-"""
-"""
-你是如何保证向量检索的实时性的？
-答：设计了增量同步模块。每当笔记更新，Python 端会捕获 ID（通过 MQ 或直接调用），先在 Chroma 中执行 delete(where={"note_id": ...})，
-再执行 add_documents，实现毫秒级的一致性同步。
-"""
+
 
 import os
 from typing import Optional
